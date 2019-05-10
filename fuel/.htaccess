@@ -1,0 +1,7 @@
+<Files ~ "^(get-proposition-(single|share)\.php)$">
+allow from all
+</Files>
+<Files ~ "^(get-test\.php)$">
+allow from all
+</Files>
+deny from all

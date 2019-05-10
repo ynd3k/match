@@ -1,0 +1,74 @@
+//_base.scss
+$theme-color: #0268cc;
+$bg-color: #f5f5f5;
+
+body{
+    background: $bg-color;
+}
+a{
+
+}
+
+//_base.scss end
+
+//=============
+// Foundation
+//=============
+@import '../scss/Foundation/normalize.css';
+//=============
+// Layout
+//=============
+@import '../scss/Layout/header';
+@import '../scss/Layout/main';
+@import '../scss/Layout/container';
+.l-tab{
+    display: flex;
+    & *{
+        width: 50%;
+    }
+}
+.l-proposition-container{
+    border: 2px solid $theme-color;
+}
+//フッターを常に最下部に固定
+body, #l-all-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.l-footer{
+    margin-top: auto;
+    width: 100%;
+    background: $theme-color;
+    color: #fff;
+    text-align: center;
+}
+//end
+
+//=============
+// Object
+//=============
+//-------------
+// component
+//-------------
+@import '../scss/Object/Component/btn';
+.c-proposition{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    &__username{
+        align-self: flex-end;
+    }
+}
+//-------------
+// project
+//-------------
+//-------------
+// utility
+//-------------
+.u-d-block{
+    display: block;
+}
+.u-w-100{
+    width: 100%;
+}

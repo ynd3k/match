@@ -1,0 +1,13 @@
+.c-btn{
+    display: block;
+    border: none;
+    background-color: #fff;
+    color: $theme-color;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    &--active{
+        background-color: $theme-color;
+        color: #fff;
+    }
+}
